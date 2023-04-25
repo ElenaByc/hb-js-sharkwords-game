@@ -93,7 +93,9 @@ const handleCorrectGuess = (letter, word) => {
 // all buttons and show the "play again" message.
 const handleWrongGuess = () => {
     numWrong += 1;
-
+    // get that span
+    // update its innerText
+    document.querySelector('#wrong span').innerText = numWrong;
 
     document.querySelector('#shark-img img')
         .setAttribute('src', `/static/images/guess${numWrong}.png`);
